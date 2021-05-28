@@ -1,0 +1,41 @@
+p{
+    color: red;
+}
+
+#logo{
+    display: block;
+    margin: auto;
+}
+
+#search{
+    display: flex;
+    justify-content: left;
+    justify-self: center;
+    padding-left: 1em;
+    border-style: solid;
+    border-color:lightgray;
+    border-radius: 2em;
+    border-width: thin;
+    width: 50%;
+}
+
+#search-icon{
+    display: block;
+    margin: auto 0;
+    float: left;
+}
+
+.textbox{
+    border: none;
+    outline: none;
+    width: 90%;
+}
+
+button{
+    color: black;
+    background-color: rgb(245, 245, 245);
+    border: none;
+    padding: 5px;
+}
+
+
