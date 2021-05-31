@@ -1,3 +1,10 @@
+html{
+    font-family: sans-serif;
+    font-size: 10pt;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 p{
     color: red;
 }
@@ -22,10 +29,12 @@ p{
     top: 100%;
     transform: translate(-50%);
     padding-left: 1em;
+    padding: 0.8em 0 0.8em 1em;
     border-style: solid;
     border-color:lightgray;
     border-radius: 2em;
     border-width: thin;
+    min-width: 400px;
     width: 65%;
 }
 
@@ -42,12 +51,16 @@ p{
     width: 85%;
 }
 
-.button-group{
-    display: block;
+.search-buttons{
+    display: flex;
     position: absolute;
+    justify-content: space-around;
+    width: 300px;
     left: 50%;
     transform: translate(-50%);
-    top: 0px;
+    top: 100%;
+    margin-top: 2em;
+
 }
 
 button{
@@ -56,7 +69,7 @@ button{
     border: solid;
     border-width: 1px;
     border-color: transparent;
-    padding: 5px;
+    padding: 5px 10px;
 }
 
 button:hover{
@@ -72,8 +85,43 @@ button:hover{
 }
 
 .navigation ul{
-
+    display: flex;
+    align-items: center;
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
+
+.navigation li{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+
+ a:hover{
+     text-decoration: underline;
+ }
+
+ .top-link{
+     color: black;
+ }
+
+ .bottom-link{
+     color:#585858;
+     white-space: nowrap;
+ }
+
+ #account-icon{
+     border-radius: 50%;
+ }
+
+ .bottom-navigation{
+     background-color: rgb(240, 240, 240);
+ }
+ .bottom-navigation li{
+     margin: 2em 0;
+     padding: 0 1em;
+ }
