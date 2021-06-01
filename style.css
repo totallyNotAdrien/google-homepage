@@ -9,6 +9,10 @@ p{
     color: red;
 }
 
+body{
+    margin: 0;
+}
+
 .center-screen-stuff{
     position: absolute;
     width: 100%;
@@ -42,6 +46,7 @@ p{
     display: block;
     margin: auto 0;
     float: left;
+    
 }
 
 #textbox{
@@ -49,6 +54,9 @@ p{
     border: none;
     outline: none;
     width: 85%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .search-buttons{
@@ -81,6 +89,7 @@ button:hover{
 .navigation{
     display:flex;
     justify-content: space-between;
+    margin: 5px;
 
 }
 
@@ -120,6 +129,12 @@ a{
 
  .bottom-navigation{
      background-color: rgb(240, 240, 240);
+     width: 100%;
+     margin: 0;
+     height: 65px;
+     position: absolute;
+     bottom: 0;
+     
  }
  .bottom-navigation li{
      margin: 2em 0;
